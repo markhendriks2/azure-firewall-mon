@@ -32,6 +32,9 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "dist/firewall-mon-app" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+        env: # Add environment variables here
+          eventHubConsumerGroup: $Default
+          eventHubConnection: Endpoint=sb://azurefirewallmonitor01.servicebus.windows.net/;SharedAccessKeyName=AzMonitorListener;SharedAccessKey=VfmdKclz0li59bc+vElsYtfN9IpLjTJWB+AEhIkz35A=;EntityPath=azmonitorcapture
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
