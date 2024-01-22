@@ -4,6 +4,6 @@ export const environment = {
   BuildDate: "__BUILDDATE__",
   AzureMapsSASKey: "__AZURE_MAPS_SAS_KEY__",
   EventsQueueLength: 100000,
-  eventHubConnectionString: "Endpoint=sb://azurefirewallmonitor01.servicebus.windows.net/;SharedAccessKeyName=AzMonitorListener;SharedAccessKey=VfmdKclz0li59bc+vElsYtfN9IpLjTJWB+AEhIkz35A=;EntityPath=azmonitorcapture"
+  eventHubConnectionString: "Endpoint=sb://azurefirewallmonitor01.servicebus.windows.net/;SharedAccessKeyName=AzMonitorListener;SharedAccessKey=VfmdKclz0li59bc+vElsYtfN9IpLjTJWB+AEhIkz35A=;EntityPath=azmonitorcapture",
   eventHubConsumerGroup: "$Default"
 };
