@@ -22,8 +22,8 @@ export class LoginComponent implements OnInit {
   }
 
   buildDate: string = environment.BuildDate;
-  eventHubConnectionString: string = this.model.eventHubConnection;
-  eventHubConsumerGroup: string = this.model.eventHubConsumerGroup;
+  eventHubConnectionString: string = environment.eventHubConnectionString;
+  eventHubConsumerGroup: string = environment.eventHubConsumerGroup;
   azureMapsSharedKey: string = this.model.azureMapsSharedKey;
   isDemoMode: boolean = this.model.demoMode;
   isStartDisabled: boolean = false;
